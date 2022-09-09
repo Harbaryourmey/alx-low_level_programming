@@ -9,19 +9,26 @@
 */
 int main(void)
 {
-int c, i;
-for (c = '0'; c <= '9'; c++)
-for (i = '0'; i <= '9'; i++)
-if (c < i)
+int c = '0';
+int i = '0';
+while (c <= '9')
+while (i <= '9')
+if (!(c > i || c == i))
 {
 putchar(c);
 putchar(i);
 }
-if (c != '8' || (c == '8' && i != '9'))
+if (c == '8' && i == '9')
+{
+putchar('\n');
+}
+else
 {
 putchar(',');
 putchar(' ');
 }
-putchar('\n');
+i++;
+i = '0';
+c++;
 return (0);
 }
