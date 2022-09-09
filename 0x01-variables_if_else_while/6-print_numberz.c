@@ -8,7 +8,7 @@
 */
 int main(void)
 {
-int b
+int b;
 for (b = 0; b < 10; b++)
 putchar(b);
 putchar("%d", b);
