@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 /**
 * main - Entry point
 *
@@ -9,21 +8,18 @@
 */
 int main(void)
 {
-int m, n, o, p;
-for (m = 48; m <= 57; m++)
-for (n = 48; n <= 57; n++)
-for (o = 48; o <= 57; o++)
-for (p = 48; p <= 57; p++)
-if (((o + p) > (m + n) && o >= m) || m < o)
+int m, n;
+for (m = 0; m <= 99; m++)
+for (n = 0; n <= 99; n++)
+if (m < n  && m != n)
 {
-putchar(m);
-putchar(n);
+putchar((m / 10) + '0');
+putchar((m % 10) + '0');
 putchar(' ');
-putchar(o);
-putchar(p);
+putchar(n / 10) + '0');
+putchar((n % 10) + '0');
 }
-if (m + n + o + p == 227 && m == 57)
-else
+if (m != 98 || n != 99)
 {
 putchar(',');
 putchar(' ');
