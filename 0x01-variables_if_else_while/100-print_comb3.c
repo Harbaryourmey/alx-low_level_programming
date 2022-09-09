@@ -8,16 +8,18 @@
 */
 int main(void)
 {
-int c = '0';
 int i = '0';
-while (c <= '9')
+int j = '0';
+
 while (i <= '9')
-if (!(c > i || c == i))
 {
-putchar(c);
+while (j <= '9')
+{
+if (!(i > j || i == j))
+{
 putchar(i);
-}
-if (c == '8' && i == '9')
+putchar(j);
+if (i == '8' && j == '9')
 {
 putchar('\n');
 }
@@ -26,8 +28,11 @@ else
 putchar(',');
 putchar(' ');
 }
+}
+j++;
+}
+j = '0';
 i++;
-i = '0';
-c++;
+}
 return (0);
 }
