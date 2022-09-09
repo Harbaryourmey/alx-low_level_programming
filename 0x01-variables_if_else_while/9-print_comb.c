@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
 /**
 * main - Entry point
 *
@@ -19,6 +19,7 @@ if (i != '9')
 putchar(',');
 putchar (' ');
 }
+{}
 putchar('\n');
 return (0);
 }

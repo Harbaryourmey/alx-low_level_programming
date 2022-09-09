@@ -23,8 +23,9 @@ putchar(o);
 putchar(p);
 }
 if (m + n + o + p == 227 && m == 57)
-{ break; }
+{break;
 else
+}
 {
 putchar(',');
 putchar(' ');
