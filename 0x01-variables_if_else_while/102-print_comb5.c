@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h
+#include <unistd.h>
 /**
 * main - Entry point
 *
@@ -16,14 +16,14 @@ for (o = 48; o <= 57; o++)
 for (p = 48; p <= 57; p++)
 if (((o + p) > (m + n) && o >= m) || m < o)
 {
-putchar(m)
+putchar(m);
 putchar(n);
 putchar(' ');
 putchar(o);
 putchar(p);
 }
 if (m + n + o + p == 227 && m == 57)
-break;
+{ break; }
 else
 {
 putchar(',');
