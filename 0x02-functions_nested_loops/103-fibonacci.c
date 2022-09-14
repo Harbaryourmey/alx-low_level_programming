@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 /**
 * main - sum even fibonacci numbers under 4 million.
@@ -7,7 +6,7 @@
 */
 int main(void)
 {
-int  m = 1, n = 2, sums= 0;
+int  m = 1, n = 2, sums = 0;
 int o;
 while (n < 40000000)
 {
