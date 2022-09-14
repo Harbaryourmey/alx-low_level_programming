@@ -2,7 +2,7 @@
 /**
 * main - check the code.
 *
-* description: To checks for alphabetic character.
+* _isalpha - To checks for alphabetic character.
 * @c: character to test.
 * Return: Always 0.
 */
