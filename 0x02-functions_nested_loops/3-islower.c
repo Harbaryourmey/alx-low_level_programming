@@ -4,7 +4,7 @@
 * @c: character to test, which store the value received.
 * Return: 1 if it is lowercase letter and 0 if otherwise.
 */
-int _islower(int c);
+int _islower(int c)
 {
 if (m >= 'a' && m <= 'z')
 return (1)
