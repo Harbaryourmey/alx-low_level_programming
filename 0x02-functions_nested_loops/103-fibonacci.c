@@ -10,7 +10,7 @@ int o;
 while (n < 40000000)
 {
 if (n % 2 == 0)
-sum += n;
+sums += n;
 o  = n;
 n += m;
 m = o;
