@@ -5,19 +5,16 @@
 */
 int main(void)
 {
-unsigned long count, m, n, o, sums;
-m = sums = 0;
-n = 1;
-for (count = 0; count < 50; count++)
+int  m = 1, n = 2, sums= 0;
+int o;
+while (n < 40000000)
 {
-o = m + n;
-m = n;
-n = o;
-if (o % 2 == 0 && 0 < 4000000)
-{
-sums += o;
+if (n % 2 == 0)
+sum += n;
+o  = n;
+n += m;
+m = o;
 }
-}
-printf("%lu\n", sums);
+printf("%d\n", sums);
 return (0);
 }

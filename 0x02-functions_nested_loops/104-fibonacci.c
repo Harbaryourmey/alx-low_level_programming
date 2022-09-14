@@ -25,16 +25,16 @@ b = b / 1000;
 while (count <= 98)
 {
 carry = (m + n) / 1000;
-p = (m + n) - carry * 1000;
+o = (m + n) - carry * 1000;
 c = (a + b) + carry;
 m = n;
-n = p;
+n = o;
 a = b;
 b = c;
-if (p >= 100)
-printf("%lu%lu", c, p);
+if (o >= 100)
+printf("%lu%lu", c, o);
 else
-printf("%lu0%lu", c, p);
+printf("%lu0%lu", c, o);
 if (count != 98)
 printf(", ");
 count++;

@@ -5,21 +5,20 @@
 */
 int main(void)
 {
-unsigned long count, m, n, o;
-m = 0;
-n = 1;
-for (count = 0; count < 50; count++)
+long m = 0;
+long k = 1;
+int n = 0;
+long fib;
+while (n < 50)
 {
-o = m + n;
-m = m;
-n = o;
-printf("%lu", o);
-if (count == 49)
-putchar('\n');
+fib = k + m;
+if (n != 49)
+printf("%ld, ", fib);
 else
-{
-printf(", ");
-}
+printf("%ld\n", fib);
+m = k;
+k = fib;
+n += 1;
 }
 return (0);
 }
