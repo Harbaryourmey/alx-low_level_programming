@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-  * main - print the first 98 fibonacci numbers.
-  * Return: Nothing.
-  */
+* main - print the first 98 fibonacci numbers.
+* Return: Nothing.
+*/
 int main(void)
 {
 int count;
@@ -25,8 +25,8 @@ b = b / 1000;
 while (count <= 98)
 {
 carry = (m + n) / 1000;
-o = (m + n) - carry * 1000;
-c = (a + b) + carry;
+o = (m + n) -carry * 1000;
+c = (a + b) +carry;
 m = n;
 n = o;
 a = b;
